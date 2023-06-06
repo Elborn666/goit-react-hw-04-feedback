@@ -7,13 +7,13 @@ import css from './App.module.css'
 
 
 function App() {
-  const [good, setGoog] = useState[0];
-  const [neutral, setNeutral] = useState[0];
-  const [bad, setBad] = useState[0];
+  const [good, setGoog] = useState(0);
+  const [neutral, setNeutral] = useState(0);
+  const [bad, setBad] = useState(0);
 
 
-  const handleButtonClick = ({ target: { name } }) => {
-    switch(name){
+  const handleButtonClick = ( options ) => {
+    switch(options){
       case 'good':
         setGoog(prevGood => prevGood + 1);
         break;
